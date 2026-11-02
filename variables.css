@@ -1,0 +1,49 @@
+/* ===== variables.css · tokens cálidos (claro + oscuro) ===== */
+:root {
+  color-scheme: light dark;
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  --gap: clamp(0.6rem, 1.2vw, 1rem);
+  --radius: 1.5rem;
+  --pad: clamp(1rem, 2vw, 1.6rem);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 260ms;
+
+  /* Modo claro*/
+  --bg: #e6d9c9;
+  --cell: #f8f1e7;
+  --border: #d6c3ad;
+  --text: #2a1a10;
+  --muted: #7a6350;
+  --brand: #4a2c1a;
+  --brand-ink: #f8eadb;
+  --caramel: #c9792b;
+  --caramel-ink: #2a1500;
+  --cherry: #8f2d24;
+  --cherry-ink: #fdeeea;
+  --photo-fallback: #d6c3ad;
+  --shadow: 0 1px 2px rgb(42 26 16 / 0.06), 0 12px 24px -14px rgb(42 26 16 / 0.35);
+  --shadow-hover: 0 2px 4px rgb(42 26 16 / 0.08), 0 24px 36px -16px rgb(42 26 16 / 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #140d09;
+    --cell: #211610;
+    --border: #36251a;
+    --text: #f3e6d6;
+    --muted: #b39a82;
+    --brand: #5b3820;
+    --brand-ink: #f8eadb;
+    --caramel: #e39a45;
+    --caramel-ink: #2a1500;
+    --cherry: #a73a2c;
+    --cherry-ink: #fdeeea;
+    --photo-fallback: #2a1c13;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.5);
+    --shadow-hover: 0 24px 36px -16px rgb(0 0 0 / 0.9);
+  }
+}
